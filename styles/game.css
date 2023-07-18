@@ -22,14 +22,24 @@
     color: #FF42A5;
 }
 
+.center-content {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+header {
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
+}
+
 /* navbar styles */
+
 
 .nav-container {
     display: flex;
     align-items: center;
-    /* justify-content: center; */
-    max-width: 1400px;
-    margin: 0 auto;
+    justify-content: center;
+
 
 }
 
@@ -68,25 +78,74 @@
 #follow-us {
     border-radius: 8px;
     background: rgba(11, 2, 35, 0.10);
-    
+
     display: flex;
     align-items: center;
 }
 
-#follow-us > p ,#follow-us > a  {
+#follow-us>p,
+#follow-us>a {
     padding: 18px 24px;
+}
+
+/* banner styles */
+.banner-container {
+    display: flex;
+
+    justify-content: space-around;
+    border: 2px solid red;
+}
+
+.banner-content {
+    display: flex;
+    align-items: center;
+}
+
+.banner-title {
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+}
+
+.banner-goat {
+    margin-top: 0px;
+    font-size: 6rem;
+    text-align: center;
+    font-weight: 800;
+    text-transform: uppercase;
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.banner-img-only img {
+    height: 90%;
 }
 
 /* ############### Mobile responsive ############### */
 
 @media screen and (max-width:425px) {
-    .nav-container, .nav-container ul{
+
+    .nav-container,
+    .nav-container ul {
         flex-direction: column;
-       
-        
+
+
     }
 
-    .nav-container li{
+    .logo-container img {
+        height: 25px;
+        margin-right: 5px;
+        object-fit: cover;
+    }
+
+
+    .nav-container li {
         margin-top: 30px;
     }
+
+
 }
