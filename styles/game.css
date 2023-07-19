@@ -4,13 +4,14 @@
 :root {
     --black1: #3C354F;
     --black2: #534C64;
-    --pink:#FF42A5;
-    --skyblue:#4EC5F7;
+    --pink: #FF42A5;
+    --skyblue: #4EC5F7;
 }
 
 * {
     box-sizing: border-box;
     font-family: 'Work Sans', sans-serif;
+    font: 16px;
 }
 
 
@@ -25,7 +26,7 @@
 }
 
 .center-content {
-    max-width: 1400px;
+    max-width: 1440px;
     margin: 0 auto;
 }
 
@@ -34,9 +35,10 @@ header {
     box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
 }
 
-button{
+button {
     margin-right: 25px;
 }
+
 .btn-primary {
     border-radius: 48px;
     background: var(--pink);
@@ -120,35 +122,36 @@ button{
 /* banner styles */
 .banner-container {
     display: flex;
-    justify-content: space-around;
-    
-   
+    justify-content: flex-start;
+
+
     padding: 10px;
-    
-}
-
-.banner-left{
-width: 50%;
-margin: 0 auto;
-align-self: center;
-padding: 1opx;
 
 }
-.banner-right{
-width: 50%;
+
+.banner-left {
+    /* width: 50%; */
+    margin: 0 auto;
+    align-self: center;
+    padding: 1opx;
+
 }
 
-.banner-right img{
+.banner-right {
+    /* width: 50%; */
+}
+
+.banner-right img {
     width: auto;
     height: 100%;
-    object-fit:cover;
+    object-fit: cover;
 }
 
 
 .banner-title {
     font-weight: 600;
     text-transform: uppercase;
-        margin: 0px;
+    margin: 0px;
     padding: 0px;
 }
 
@@ -163,7 +166,8 @@ width: 50%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-.banner-left i{
+
+.banner-left i {
     margin-right: 10px;
 }
 
@@ -192,5 +196,37 @@ width: 50%;
         margin-top: 30px;
     }
 
+    .banner-container {
+        flex-direction: column-reverse;
+        align-items: center;
 
+
+    }
+
+    .banner-right img{
+        width: 100%;
+        margin: 0px;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:1024px){
+    .banner-container {
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+
+
+    }
+
+    /* .banner-right img{
+        width:95%;
+        margin: 0px;
+    }
+
+    .banner-left {
+        
+        width:95%;
+        margin: 0px;
+    } */
 }
