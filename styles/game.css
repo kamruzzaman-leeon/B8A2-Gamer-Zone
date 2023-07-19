@@ -21,6 +21,10 @@
     font-size: 3rem;
 }
 
+.font-color {
+    color: var(--black2);
+}
+
 .title-font-color {
     color: var(--pink);
 }
@@ -36,7 +40,7 @@ header {
 }
 
 button {
-    margin-right: 25px;
+    margin-right: 0px 25px 20px;
 }
 
 .btn-primary {
@@ -47,8 +51,8 @@ button {
     padding: 21px 40px;
     font-size: 1.2rem;
     cursor: pointer;
-    display: inline-flex;
-    gap: 20px;
+    /* display: inline-flex;
+    gap: 20px; */
 }
 
 .btn-secondary {
@@ -59,8 +63,8 @@ button {
     padding: 21px 40px;
     font-size: 1.2rem;
     cursor: pointer;
-    display: inline-flex;
-    gap: 20px;
+    /* display: inline-flex; */
+    /* gap: 20px; */
 }
 
 /* navbar styles */
@@ -143,7 +147,7 @@ button {
 
 .banner-right img {
     width: auto;
-    height: 100%;
+    height: auto;
     object-fit: cover;
 }
 
@@ -171,8 +175,44 @@ button {
     margin-right: 10px;
 }
 
+.online-game h2,p{
+    text-align: center;
+    margin-bottom: 15px;
+}
 
 
+.funny-video {
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    font-weight: 700;
+
+}
+
+.online-game-card-container {
+    margin-top: 22px;;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    gap:22px
+}
+
+.online-game-card {
+    
+   align-items: center;
+    
+    
+} 
+
+.online-game-card-title {
+    padding: 5px;
+    text-align: left;
+    font-size: 1.1rem;
+    font-weight: 500;
+
+}
 
 /* ############### Mobile responsive ############### */
 
@@ -203,13 +243,20 @@ button {
 
     }
 
-    .banner-right img{
-        width: 100%;
+    .banner-right img {
+        width: 100vw;
         margin: 0px;
+    }
+    .online-game-card-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        
     }
 }
 
-@media screen and (min-width:768px) and (max-width:1024px){
+
+
+@media screen and (min-width:768px) and (max-width:1024px) {
     .banner-container {
         flex-direction: column-reverse;
         flex-wrap: wrap;
@@ -229,4 +276,14 @@ button {
         width:95%;
         margin: 0px;
     } */
+
+    .online-game-card-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 22px;
+        justify-content: ;
+    }
+
+
+
 }
