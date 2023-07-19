@@ -4,6 +4,8 @@
 :root {
     --black1: #3C354F;
     --black2: #534C64;
+    --pink:#FF42A5;
+    --skyblue:#4EC5F7;
 }
 
 * {
@@ -19,7 +21,7 @@
 }
 
 .title-font-color {
-    color: #FF42A5;
+    color: var(--pink);
 }
 
 .center-content {
@@ -30,6 +32,33 @@
 header {
     background: #FFF;
     box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
+}
+
+button{
+    margin-right: 25px;
+}
+.btn-primary {
+    border-radius: 48px;
+    background: var(--pink);
+    color: #fff;
+    border: 0;
+    padding: 21px 40px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    display: inline-flex;
+    gap: 20px;
+}
+
+.btn-secondary {
+    border-radius: 48px;
+    background: var(--skyblue);
+    color: #fff;
+    border: 0;
+    padding: 21px 40px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    display: inline-flex;
+    gap: 20px;
 }
 
 /* navbar styles */
@@ -91,21 +120,35 @@ header {
 /* banner styles */
 .banner-container {
     display: flex;
-
     justify-content: space-around;
-    border: 2px solid red;
+    
+   
+    padding: 10px;
+    
 }
 
-.banner-content {
-    display: flex;
-    align-items: center;
+.banner-left{
+width: 50%;
+margin: 0 auto;
+align-self: center;
+padding: 1opx;
+
 }
+.banner-right{
+width: 50%;
+}
+
+.banner-right img{
+    width: auto;
+    height: 100%;
+    object-fit:cover;
+}
+
 
 .banner-title {
     font-weight: 600;
     text-transform: uppercase;
-    text-align: center;
-    margin: 0px;
+        margin: 0px;
     padding: 0px;
 }
 
@@ -120,10 +163,12 @@ header {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-
-.banner-img-only img {
-    height: 90%;
+.banner-left i{
+    margin-right: 10px;
 }
+
+
+
 
 /* ############### Mobile responsive ############### */
 
