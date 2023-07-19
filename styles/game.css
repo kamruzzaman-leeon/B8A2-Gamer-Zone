@@ -40,7 +40,7 @@ header {
 }
 
 button {
-    margin-right: 0px 25px 20px;
+    margin-right: 20px 25px;
 }
 
 .btn-primary {
@@ -51,8 +51,6 @@ button {
     padding: 21px 40px;
     font-size: 1.2rem;
     cursor: pointer;
-    /* display: inline-flex;
-    gap: 20px; */
 }
 
 .btn-secondary {
@@ -63,8 +61,7 @@ button {
     padding: 21px 40px;
     font-size: 1.2rem;
     cursor: pointer;
-    /* display: inline-flex; */
-    /* gap: 20px; */
+    
 }
 
 /* navbar styles */
@@ -127,12 +124,17 @@ button {
 .banner-container {
     display: flex;
     justify-content: flex-start;
-
-
     padding: 10px;
-
 }
 
+.banner-left-img{
+    position: absolute;
+    left: 0px;
+    width: 55%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
 .banner-left {
     /* width: 50%; */
     margin: 0 auto;
@@ -140,10 +142,13 @@ button {
     padding: 1opx;
 
 }
+.banner-left p{
+    text-align: left;
+}
 
 .banner-right {
     /* width: 50%; */
-}
+} 
 
 .banner-right img {
     width: auto;
