@@ -12,6 +12,7 @@
     box-sizing: border-box;
     font-family: 'Work Sans', sans-serif;
     font: 16px;
+    margin: 0px auto;
 }
 
 
@@ -71,13 +72,14 @@ button {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 10px 0px;
 
 
 }
 
 .logo-container {
     display: flex;
-    width: 50%;
+    justify-content: center;
     align-items: center;
 }
 
@@ -123,25 +125,32 @@ button {
 /* banner styles */
 .banner-container {
     display: flex;
-    justify-content: flex-start;
-    padding: 10px;
+    justify-content: flex-end;
+    /* padding: 40px; */
+    margin: 0 auto;
+    align-items:center;
+    overflow: hidden;
+    border: 20PX solid gold;
+    
 }
 
-/* .banner-left-img{
+
+.banner-left {
+    align-items: center;
+    justify-content: flex-end;
+    padding: 50px;
+    position: relative;
+    overflow: hidden;
+    flex: 1;
+
+}
+.banner-left-img{
     position: absolute;
-    left: 0px;
-    width: 55%;
+    /* left: 0px; */
+    max-width: 100%;
     background-size: cover;
     background-repeat: no-repeat;
-    overflow: hidden;
-} */
-.banner-left {
-    /* width: 50%; */
-    margin: 0 auto;
-    align-items: center;
-    justify-content: flex-start;
-    padding: 10px;
-
+    /* overflow: hidden; */
 }
 
 .banner-left p {
@@ -149,12 +158,12 @@ button {
 }
 
 .banner-right {
-    /* width: 50%; */
+    flex: 1;
 }
 
 .banner-right img {
-    width: auto;
-    height: auto;
+    max-width: 100;
+    
     object-fit: cover;
 }
 
@@ -162,7 +171,7 @@ button {
 .banner-title {
     font-weight: 600;
     text-transform: uppercase;
-    margin: 0px;
+    /* margin: 0px; */
     padding: 0px;
 }
 
@@ -379,6 +388,10 @@ footer .font-white {
 
      
 }
+.more-game img{
+    width: 25%;
+    height: 25%
+ }
 
 
 /* ############### Mobile responsive ############### */
@@ -453,11 +466,11 @@ footer .font-white {
     .more-game div{
       margin: auto;
       /* border: 2px solid green; */
-      margin: px;
+      margin: 2px;
      }
 
      .more-game img{
-        width: 50%;
+        width: 25%;
         height: auto;
      }
 
