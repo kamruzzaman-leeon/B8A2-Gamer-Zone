@@ -307,11 +307,11 @@ footer .font-white {
 .play-instant {
     display: flex;
     justify-content: space-around;
-    
+
     margin: 100px;
     flex-wrap: wrap;
     /* padding: 30px; */
-   
+
 
 }
 
@@ -331,7 +331,7 @@ footer .font-white {
 .play-instant-content h2,
 .play-instant-content p {
     text-align: right;
-    
+
 }
 
 .play-instant-img {
@@ -340,22 +340,46 @@ footer .font-white {
     padding: 30px;
 }
 
-.play-instant-img{
+.play-instant-img {
     position: relative;
 }
 
-.image1{
-    width: 100% ;
+.image1 {
+    width: 100%;
     height: auto;
     display: block;
 }
-.image2{
+
+.image2 {
     position: absolute;
     bottom: -10%;
     left: -20%;
-    max-width: 40%; /* adjust the width as needed */
+    max-width: 40%;
+    /* adjust the width as needed */
     height: auto;
 }
+
+.more-game{
+    display: flex;
+    /* grid-template-columns: repeat(5,1.2fr); */
+    /* grid-template-columns: repeat(4,1fr); */
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.more-game> div{
+    border-radius: 50px;
+    border: 30px 20px;
+    margin: 27px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+     
+}
+
 
 /* ############### Mobile responsive ############### */
 
@@ -397,24 +421,49 @@ footer .font-white {
 
     }
 
-    .play-instant{
+    .play-instant {
         flex-direction: column;
         margin: auto;
-        
-       
+
+
     }
 
-    .play-instant-content{
-        
+    .play-instant-content {
+
         padding: 15px;
         margin: 0 auto;
-        
+
     }
-    .play-instant-img{
-        width: 80%;
+
+    .play-instant-img {
+        width: 70%;
         left: 20%;
         margin-bottom: 10%;
     }
+
+    .more-game{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(3,1fr);        
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+    .more-game div{
+      margin: auto;
+      /* border: 2px solid green; */
+      margin: px;
+     }
+
+     .more-game img{
+        width: 50%;
+        height: auto;
+     }
+
+
+
+
 
     footer {
         padding-bottom: 130px;
@@ -467,9 +516,10 @@ footer .font-white {
         margin: 0px;
     } */
 
-    .play-instant{
+    .play-instant {
         flex-direction: column;
     }
+
     .online-game-card-container {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
