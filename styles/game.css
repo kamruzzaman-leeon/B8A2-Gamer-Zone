@@ -12,7 +12,7 @@
     box-sizing: border-box;
     font-family: 'Work Sans', sans-serif;
     font: 16px;
-    margin: 0px auto;
+    margin: 0px;
 }
 
 
@@ -71,7 +71,7 @@ button {
 .nav-container {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     padding: 10px 0px;
 
 
@@ -125,47 +125,40 @@ button {
 /* banner styles */
 .banner-container {
     display: flex;
-    justify-content: flex-end;
-    /* padding: 40px; */
     margin: 0 auto;
-    align-items:center;
-    overflow: hidden;
-    border: 20PX solid gold;
-    
+    align-items: center;
+    width: 100%;
+
+
 }
 
+.banner-container img {
+    width: 100%;
+    height: auto;
+
+}
 
 .banner-left {
     align-items: center;
-    justify-content: flex-end;
-    padding: 50px;
     position: relative;
-    overflow: hidden;
-    flex: 1;
+
 
 }
-.banner-left-img{
+
+.banner-left-content {
     position: absolute;
-    /* left: 0px; */
-    max-width: 100%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    /* overflow: hidden; */
+    left: 25%;
+    padding: 20px;
+
 }
 
-.banner-left p {
+.banner-left-content p {
     text-align: left;
 }
-
-.banner-right {
-    flex: 1;
+p{
+    font-size: 80%;
 }
 
-.banner-right img {
-    max-width: 100;
-    
-    object-fit: cover;
-}
 
 
 .banner-title {
@@ -220,6 +213,7 @@ p {
     justify-content: center;
     padding: 0px 20px;
     /* border: 2px solid gold; */
+    position: relative;
 }
 
 .online-game-card {
@@ -228,6 +222,23 @@ p {
     /* border: 2px solid rgb(51, 0, 255); */
     margin: 20px;
 
+
+
+}
+
+.online-game-card-container :hover .online-game-card-play {
+    display: block;
+}
+
+.online-game-card-play {
+    position: absolute;
+    display: none;
+    top: 50%;
+    width: 40px;
+    margin: 0 auto;
+    left: 0px;
+    right: 0px;
+    z-index: 100;
 
 }
 
@@ -368,17 +379,17 @@ footer .font-white {
     height: auto;
 }
 
-.more-game{
+.more-game {
     display: flex;
     /* grid-template-columns: repeat(5,1.2fr); */
     /* grid-template-columns: repeat(4,1fr); */
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    
+
 }
 
-.more-game> div{
+.more-game>div {
     border-radius: 50px;
     border: 30px 20px;
     margin: 27px;
@@ -386,12 +397,13 @@ footer .font-white {
     align-items: center;
     gap: 10px;
 
-     
+
 }
-.more-game img{
+
+.more-game img {
     width: 25%;
     height: 25%
- }
+}
 
 
 /* ############### Mobile responsive ############### */
@@ -401,8 +413,6 @@ footer .font-white {
     .nav-container,
     .nav-container ul {
         flex-direction: column;
-
-
     }
 
     .logo-container img {
@@ -419,14 +429,29 @@ footer .font-white {
     .banner-container {
         flex-direction: column-reverse;
         align-items: center;
-
-
-    }
-
-    .banner-right img {
         width: 100vw;
-        margin: 0px;
     }
+
+    .banner-left img,
+    .banner-right img {
+        max-width: 100%;
+        height: auto;
+
+    }
+
+    .banner-left-content {
+        align-items: center;
+        justify-content: center;
+        left: 10%;
+       
+    }
+ .title-font-size{
+        font-size: 2rem;
+    }
+    .banner-goat{
+        font-size: 4rem;
+    }
+
 
     .online-game-card-container {
         display: grid;
@@ -454,27 +479,32 @@ footer .font-white {
         margin-bottom: 10%;
     }
 
-    .more-game{
+    .more-game {
         display: grid;
-        grid-template-columns: repeat(3,1fr);
-        grid-template-rows: repeat(3,1fr);        
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
         align-items: center;
         justify-content: center;
-        
+
     }
 
-    .more-game div{
-      margin: auto;
-      /* border: 2px solid green; */
-      margin: 2px;
-     }
-
-     .more-game img{
+    .more-game div {
+        margin: auto;
+        /* border: 2px solid green; */
+        margin: 2px;
+    }
+    
+    .more-game img {
         width: 25%;
         height: auto;
-     }
+    }
 
-
+    .btn-primary, .btn-secondary{
+        border-radius: 22px;      
+        padding: 11px 22px;
+        font-size: 1rem;
+        
+    }
 
 
 
